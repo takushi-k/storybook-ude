@@ -8,7 +8,7 @@ export default function Task({ task: {id, title, state}, onPinTask, onArchiveTas
         <span className="checkbox-custom" onClick={() => onArchiveTask(id)} aria-label={`archiveTask-${id}`}></span>
       </label>
       <label htmlFor="title" className="title" aria-label={title}>
-        <input type="text" value={title} readOnly={true} name="title" placeholder="Input Title" style={{backgroundColor: "red"}} />
+        <input type="text" value={title} readOnly={true} name="title" placeholder="Input Title" style={{backgroundColor: "green"}} />
       </label>
 
       {state !== "TASK_ARCHIVED" && (
