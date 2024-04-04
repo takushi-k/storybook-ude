@@ -53,7 +53,7 @@ export const Default = {
   ]
 }
 
-export const WithPinned = {
+export const WithPinnedTasks = {
   decorators: [
     (story) => {
       const pinnedTasks = [

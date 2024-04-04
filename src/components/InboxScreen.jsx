@@ -4,11 +4,14 @@ import { fetchTasks } from "../lib/store";
 import { useEffect } from "react";
 
 export default function InboxScreen(){
+  console.log("InboxScreen コール")
+
   const {error} = useSelector((state) => state.taskbox)
 
   const dispatch = useDispatch();
 
   useEffect(() => {
+    console.log("InboxScreen useEffectコール")
     dispatch(fetchTasks())
   }, [])
 

@@ -32,3 +32,11 @@ export const Archived = {
     }
   }
 }
+export const LongTitle = {
+  args: {
+    task: {
+      ...Default.args.task,
+      title: "Test Taskaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1111111111111122222222222222222222222222222222222222222222222222222222222222222222222222222",
+    }
+  }
+}

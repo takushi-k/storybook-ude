@@ -17,11 +17,17 @@ export const fetchTasks = createAsyncThunk("todos/fetchTodos", async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/todos?userId=1")
   const data = await response.json();
 
+  console.log(response.status)
+  console.log(data)
+
+
+
   const result = data.map((task) => ({
     id: `${task.id}`,
     title: task.title,
     state: task.completed ? "TASK_ARCHIVED" : "TASK_INBOX",
   }));
+  console.log(result)
 
   return result;
 })
@@ -38,13 +44,15 @@ export const TasksSlice = createSlice({
       }
     }
   },
-  extraReducers(builder){
+  extraReducers: (builder) => {
     builder.addCase(fetchTasks.pending, (state) => {
+      console.log("loading!!!!!!!!!!!!!!")
       state.status = "loading";
       state.error = null;
       state.tasks = []
     });
     builder.addCase(fetchTasks.fulfilled, (state, action) => {
+      console.log("succeeded!!!!!!!!!!!!!!")
       state.status = "succeeded";
       state.error = null;
       state.tasks = action.payload
