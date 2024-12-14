@@ -36,7 +36,7 @@ export const LongTitle = {
   args: {
     task: {
       ...Default.args.task,
-      title: "Test Taskaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1111111111111122222222222222222222222222222222222222222222222222222222222222222222222222222",
+      title: "Test Taskaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa11111111111111222222222222222222222222222222222222222222222222222222222222222222233333333333",
     }
   }
 }
