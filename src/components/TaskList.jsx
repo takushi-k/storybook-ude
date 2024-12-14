@@ -60,7 +60,7 @@ export default function TaskList(){
   }
 
   return (
-    <div className="list-items"　data-testid="success">
+    <div className="list-items" data-testid="success">
       {tasks.map((task) => (
         <Task
           key={task.id}
@@ -74,11 +74,11 @@ export default function TaskList(){
 }
 
 
-TaskList.PropType = {
-  loading: PropType.bool,
-  tasks: PropType.arrayOf(Task.PropType.task).isRequired,
+// TaskList.PropType = {
+//   loading: PropType.bool,
+//   tasks: PropType.arrayOf(Task.PropType.task).isRequired,
 
-}
-TaskList.defaultProps = {
-  loading: false
-}
+// }
+// TaskList.defaultProps = {
+//   loading: false
+// }
