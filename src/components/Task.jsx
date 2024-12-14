@@ -14,7 +14,7 @@ export default function Task({ task: {id, title, state}, onPinTask, onArchiveTas
           readOnly={true}
           name="title"
           placeholder="Input Title"
-          style={{backgroundColor: "green", textOverflow: "ellipsis"}}
+          style={{backgroundColor: "pink", textOverflow: "ellipsis"}}
         />
       </label>
 
